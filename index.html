@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>教學：如何幫「別人」叫 Uber 小黃計程車（可現金付款）</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'uber-yellow': '#FFC000',
+                        'uber-black': '#1A1A1A',
+                        'step-blue': '#E0F2FE',
+                        'step-green': '#D1FAE5',
+                        'step-purple': '#F3E8FF',
+                        'step-red': '#FEE2E2',
+                        'step-orange': '#FFEDD5', /* New color for Step 5 */
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'Noto Sans TC', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .step-card {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.06);
+            transition: transform 0.2s;
+        }
+        .step-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 p-4 md:p-8 font-sans">
+
+    <div class="max-w-4xl mx-auto">
+        <header class="text-center mb-10 p-6 bg-uber-black text-white rounded-xl shadow-lg">
+            <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight mb-2">
+                🚕 幫「別人」叫 Uber 小黃教學
+            </h1>
+            <p class="text-uber-yellow text-lg md:text-xl font-medium">簡單五步驟，可使用現金付款！</p>
+        </header>
+
+        <!-- 步驟區塊容器 -->
+        <div class="space-y-8">
+
+            <!-- 🅰️ 步驟一：打開 Uber，輸入目的地 -->
+            <div class="step-card bg-step-blue border-l-8 border-blue-500 p-6 rounded-xl">
+                <h2 class="text-2xl font-bold mb-4 flex items-center text-blue-800">
+                    <span class="mr-3 text-3xl">🅰️</span> 步驟一：打開 Uber App，輸入目的地
+                </h2>
+                <div class="bg-white p-4 rounded-lg">
+                    <ul class="list-none space-y-3 pl-0 text-gray-700">
+                        <li><span class="font-semibold text-blue-600">1️⃣ 開啟 Uber App</span></li>
+                        <li><span class="font-semibold text-blue-600">2️⃣ 點選下方「🏠首頁」</span></li>
+                        <li><span class="font-semibold text-blue-600">3️⃣ 點上方搜尋框 「要去哪裡？」</span> → 這裡輸入乘客要去的地方。</li>
+                    </ul>
+                    <div class="mt-4 p-3 bg-blue-100 border border-blue-300 rounded-lg text-sm text-center text-blue-700">
+                        <img src="picture/1.jpg" alt="Uber App 首頁與搜尋框截圖 (對應第 1 張圖)" class="w-full h-auto rounded-lg">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 🅱️ 步驟二：規劃行程與切換身份 -->
+            <div class="step-card bg-step-green border-l-8 border-green-500 p-6 rounded-xl">
+                <h2 class="text-2xl font-bold mb-4 flex items-center text-green-800">
+                    <span class="mr-3 text-3xl">🅱️</span> 步驟二：規劃行程並切換身份
+                </h2>
+                <div class="bg-white p-4 rounded-lg">
+                    <ul class="list-none space-y-3 pl-0 text-gray-700">
+                        <li><span class="font-semibold text-green-600">1️⃣ 在「規劃您的行程」頁中：</span>
+                            <ul class="list-disc ml-6 text-gray-600">
+                                <li>上方第一列：上車地點（可手動輸入或修改）</li>
+                                <li>第二列：要去哪裡？ → 輸入目的地</li>
+                            </ul>
+                        </li>
+                        <li><span class="font-semibold text-green-600">2️⃣ 點右上方 「供我本人使用」 的下拉箭頭。</span></li>
+                    </ul>
+                    <div class="mt-4 p-3 bg-green-100 border border-green-300 rounded-lg text-sm text-center text-green-700">
+                        <img src="picture/2.jpg" alt="Uber App 規劃行程與本人使用下拉截圖 (對應第 2 張圖)" class="w-full h-auto rounded-lg">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 🅲️ 步驟三：新增乘客資料 -->
+            <div class="step-card bg-step-purple border-l-8 border-purple-500 p-6 rounded-xl">
+                <h2 class="text-2xl font-bold mb-4 flex items-center text-purple-800">
+                    <span class="mr-3 text-3xl">🅲️</span> 步驟三：新增乘客聯絡資料
+                </h2>
+                <div class="bg-white p-4 rounded-lg space-y-4">
+                    <ul class="list-none space-y-3 pl-0 text-gray-700">
+                        <li><span class="font-semibold text-purple-600">1️⃣ 點「新增乘客」</span>
+                            <span class="block text-xs italic text-gray-500">（在切換乘客基本資料頁面）</span>
+                            <div class="mt-2 text-sm text-center">
+                                <img src="picture/3.jpg" alt="Uber App 新增乘客按鈕截圖 (對應第 3 張圖)" class="w-full h-auto rounded-lg">
+                            </div>
+                        </li>
+                        <li><span class="font-semibold text-purple-600">2️⃣ 點「立即開始」</span>
+                            <div class="mt-2 text-sm text-center">
+                                <img src="picture/4.jpg" alt="Uber App 立即開始按鈕截圖 (對應第 4 張圖)" class="w-full h-auto rounded-lg">
+                            </div>
+                        </li>
+                        <li><span class="font-semibold text-purple-600">3️⃣ 跳出聯絡人權限時，選擇「Don’t Allow（不允許）」</span>
+                            <div class="mt-2 text-sm text-center">
+                                <img src="picture/5.jpg" alt="Uber App 聯絡人權限 Don’t Allow 截圖 (對應第 5 張圖)" class="w-full h-auto rounded-lg">
+                            </div>
+                        </li>
+                        <li><span class="font-semibold text-purple-600">4️⃣ 點右上角「➕ 新增乘客」</span>
+                            <div class="mt-2 text-sm text-center">
+                                <img src="picture/6.jpg" alt="Uber App 新增乘客（人像+號）截圖 (對應第 6 張圖)" class="w-full h-auto rounded-lg">
+                            </div>
+                        </li>
+                    </ul>
+                    <hr class="border-purple-300">
+                    <p class="font-semibold text-lg text-purple-700 mb-2">5️⃣ 手動填寫資料：</p>
+                    <div class="p-3 bg-purple-100 rounded-lg border border-purple-300 text-gray-700">
+                        名字、姓氏、手機號碼（台灣選 +886 開頭）
+                        <div class="mt-2 text-sm text-center text-purple-700 font-medium">
+                            <img src="picture/7.jpg" alt="Uber App 填寫新乘客資料截圖 (對應第 7 張圖)" class="w-full h-auto rounded-lg">
+                        </div>
+                    </div>
+                    <p class="font-semibold text-purple-600 mt-3">6️⃣ 按下「新增乘客」，返回後勾選剛新增的乘客 → 點「完成」。</p>
+                </div>
+            </div>
+
+            <!-- 🅳 步驟四：選擇車型與付款方式 -->
+            <div class="step-card bg-uber-yellow border-l-8 border-yellow-700 p-6 rounded-xl">
+                <h2 class="text-2xl font-bold mb-4 flex items-center text-yellow-800">
+                    <span class="mr-3 text-3xl">🅳</span> 步驟四：選擇優步小黃與現金付款
+                </h2>
+                <div class="bg-uber-black text-white p-5 rounded-lg">
+                    <ul class="list-none space-y-3 pl-0">
+                        <li><span class="font-semibold text-uber-yellow">1️⃣ 回到行程畫面，確認上下車地點正確。</span></li>
+                        <li><span class="font-semibold text-uber-yellow">2️⃣ 找到「優步小黃」（黃色計程車圖示）。</span></li>
+                        <li><span class="font-semibold text-uber-yellow">3️⃣ 在付款方式中選擇 「以現金付款」。</span></li>
+                        <li><span class="font-extrabold text-white bg-red-600 inline-block px-2 py-1 rounded-md">4️⃣ 按 「選擇 優步小黃」 送出叫車。</span></li>
+                    </ul>
+                    <div class="mt-4 p-3 bg-gray-800 border border-uber-yellow rounded-lg text-sm text-center text-uber-yellow">
+                        <img src="picture/8.jpg" alt="Uber App 選擇優步小黃與現金付款截圖 (對應第 8 張圖)" class="w-full h-auto rounded-lg">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 🅴 步驟五：完成叫車後，請注意以下三件事 -->
+            <div class="step-card bg-step-orange border-l-8 border-yellow-500 p-6 rounded-xl">
+                <h2 class="text-2xl font-bold mb-4 flex items-center text-yellow-800">
+                    <span class="mr-3 text-3xl">🅴</span> 步驟五：完成叫車後，請注意以下三件事 🚨
+                </h2>
+                <div class="bg-white p-4 rounded-lg">
+                    <ul class="list-disc pl-5 space-y-3 text-gray-700">
+                        <li>
+                            <span class="font-bold text-yellow-700">1️⃣ 查看車牌號碼：</span> 司機通常不會主動打電話，請在 Uber App 上查看司機車牌號碼，並幫乘客確認現場接到的車是否正確。
+                        </li>
+                        <li>
+                            <span class="font-bold text-yellow-700">2️⃣ 留意司機定位：</span> 可透過 App 追蹤司機的即時位置，確認是否即將抵達上車地點，方便提前提醒乘客準備上車。
+                        </li>
+                        <li>
+                            <span class="font-bold text-yellow-700">3️⃣ 多位乘客同時叫車時特別注意：</span> 若同時幫多人叫車，需仔細核對各乘客的司機姓名、車牌號碼、預估抵達時間，避免搭錯車或錯過司機抵達時間。
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- ✅ 最後提醒區塊 -->
+        <div class="mt-10 p-6 bg-step-red border-4 border-red-500 rounded-xl shadow-xl">
+            <h3 class="text-2xl font-extrabold text-red-700 mb-4 flex items-center">
+                <span class="mr-3 text-3xl">✅</span> 最後提醒
+            </h3>
+            <ul class="list-disc pl-5 space-y-3 text-gray-700 font-medium">
+                <li><span class="font-bold">付款方式：</span>小黃計程車可用現金付款，乘客下車時直接給司機即可。</li>
+                <li><span class="font-bold">快速叫車：</span>App 會自動記住該乘客資料，方便下次快速幫同一位乘客叫車。</li>
+                <li><span class="font-bold">取消或修改：</span>若需要取消或修改行程，可在 App 中「查看行程」內操作。</li>
+            </ul>
+        </div>
+
+    </div>
+</body>
+</html>
